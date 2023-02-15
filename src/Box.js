@@ -1,6 +1,7 @@
 
 import React, { useRef, useState } from 'react'
 import { useFrame } from '@react-three/fiber'
+import { Html } from '@react-three/drei';
 
 export function Box(props) {
   // This reference will give us direct access to the mesh
@@ -9,9 +10,10 @@ export function Box(props) {
   const [hovered, setHover] = useState(false)
   const [active, setActive] = useState(false)
   // Subscribe this component to the render-loop, rotate the mesh every frame
-  useFrame((state, delta) => (mesh.current.rotation.x += delta))
+  // useFrame((state, delta) => (mesh.current.rotation.x += delta))
   // Return view, these are regular three.js elements expressed in JSX
   return (
+
     <mesh
       {...props}
       ref={mesh}
@@ -19,8 +21,12 @@ export function Box(props) {
       onClick={(event) => setActive(!active)}
       onPointerOver={(event) => setHover(true)}
       onPointerOut={(event) => setHover(false)}>
-      <boxGeometry args={[1, 1, 1]} />
+      <boxGeometry args={[10, 10, 0.2]} />
       <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
+     
     </mesh>
+
+
+
   )
 }
