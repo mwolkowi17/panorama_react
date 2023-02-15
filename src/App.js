@@ -1,7 +1,7 @@
 
 import './App.css';
 import { Box } from './Box';
-import React, {useRef} from 'react'
+import React, { useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Panorama } from './Panorama_formatka';
 import { Html } from '@react-three/drei';
@@ -33,16 +33,15 @@ function App() {
   return (
     <>
       <Canvas camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 0, 5] }}>
+        
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
-       
         <Box position={[20, -20, -50]} />
-       <Panorama position={[0,0,0]} /> 
-      
+        <Panorama position={[0, 0, 0]} />
         <OrbitControls />
-        
+
       </Canvas>
-      </>
+    </>
   );
 }
 
