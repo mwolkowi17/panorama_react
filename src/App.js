@@ -20,7 +20,7 @@ function App() {
         <pointLight position={[10, 10, 10]} />
         {/* <Box position={[20, -20, -50]} /> */}
         {/* <Strzalka position={[30,30,-50]} /> */}
-        <StrzalkaDiferent position={[40,-40,-90]} scale={[6,0.5,6]}/>
+        <StrzalkaDiferent position={[45,-70,-120]} scale={[10,0.7,10]}/>
         <Panorama position={[0, 0, 0]} />
         <OrbitControls />
 
