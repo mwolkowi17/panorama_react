@@ -3,8 +3,8 @@ import { useLoader } from '@react-three/fiber'
 import * as THREE from 'three'
 
 
-export function Panorama() {
-    const texture = useLoader(TextureLoader, './index.png')
+export function Panorama(props) {
+    const texture = useLoader(TextureLoader, props.filename)
     return (
         <>
             <group>
