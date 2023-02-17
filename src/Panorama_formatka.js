@@ -9,7 +9,7 @@ export function Panorama(props) {
         <>
             <group>
                 <mesh>
-                    <sphereGeometry args={[500, 60, 40]} scale={[- 1, 1, 1]} />
+                    <sphereGeometry args={[500, 60, 40]} scale={[ 1, 1, 1]} />
                     {/* <meshStandardMaterial color='orange'/> */}
                     <meshBasicMaterial map={texture} side={THREE.BackSide} />                 
                 </mesh>              

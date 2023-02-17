@@ -30,4 +30,4 @@ export function StrzalkaDiferent(props) {
   )
 }
 
-useGLTF.preload('./strzalka1.gltf')
+useGLTF.preload('./strzalka2.gltf')
