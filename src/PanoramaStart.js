@@ -1,5 +1,7 @@
+import { InfoButton } from './Info_button';
 import { Panorama } from './Panorama_formatka';
 import { StrzalkaDiferent } from './StrzalkaDiferent';
+
 
 export const PanoramaStart = (props) => {
 
@@ -8,7 +10,8 @@ export const PanoramaStart = (props) => {
     return(
         <group>
             <Panorama position={[0, 0, 0]} filename={adress} />
-            <StrzalkaDiferent position={[-65,-70,-140]} scale={[10,0.7,10]} onClick={props.action} />            
+            <StrzalkaDiferent position={[-65,-70,-140]} scale={[10,0.7,10]} onClick={props.action} />
+            <InfoButton position={[-280,-70,270]} scale={[10,0.7,10]} onClick={props.action} />       
         </group>
     )
 }
