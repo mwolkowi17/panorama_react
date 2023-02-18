@@ -11,7 +11,7 @@ export const PanoramaStart = (props) => {
         <group>
             <Panorama position={[0, 0, 0]} filename={adress} />
             <StrzalkaDiferent position={[-65,-70,-140]} scale={[10,0.7,10]} onClick={props.action} />
-            <InfoButton position={[-280,-70,270]} scale={[10,0.7,10]} onClick={props.action} />       
+            <InfoButton position={[-280,-70,270]} scale={[10,0.7,10]} onClick={props.actioninfo1} />       
         </group>
     )
 }
