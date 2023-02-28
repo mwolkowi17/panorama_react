@@ -20,10 +20,7 @@ export function StrzalkaDiferent(props) {
         onPointerOver={(event) => setHover(true)}
         onPointerOut={(event) => setHover(false)} >
         <boxGeometry args={[4, 2, 4]} />
-        <meshPhongMaterial color="#fffff" opacity={0.01} transparent
-        />
-
-
+        <meshPhongMaterial color="#fffff" opacity={0.01} transparent/>
       </mesh>
 
     </group>
